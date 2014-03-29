@@ -7,7 +7,7 @@ src: url(font/pt-sans/pts-bold.woff);
 @font-face
 {
 font-family: linkFont;
-src: url(font/lato/lato_regular-webfont.woff);
+src: url(font/lato/lato_bold-webfont.woff);
 }
 
 html {
@@ -30,7 +30,7 @@ margin-bottom: 0;
 a {
 font-family:linkFont; 
 color:#268bd2; 
-font-size:1.5em; 
+font-size:1.7em; 
 text-decoration:none;
 display: inline-block;
 margin-top: .2em;
