@@ -1,60 +1,43 @@
-/*
-  Theme by inky.
-  Inspired by 'Minimalist', one of the default Tumblr themes.
-*/
+@font-face
+{
+font-family: titleFont;
+src: url(font/lato/lato_bold-webfont.woff);
+}
+@font-face
+{
+font-family: linkFont;
+src: url(font/lato/lato_regular-webfont.woff);
+}
 
-html, body, div, span, object, iframe,
-h1, h2, h3, h4, h5, h6, p, blockquote, pre,
-a, abbr, acronym, address, b, cite, code,
-del, dfn, em, i, img, ins, kbd, q, samp,
-strike, strong, tt, var,
-dl, dt, dd, ol, ul, li,
-fieldset, form, label, legend,
-table, caption, tbody, tfoot, thead, tr, th, td
-  {margin: 0; padding: 0; border: 0; outline: 0; font-size: inherit;
-   line-height: inherit; vertical-align: baseline; background: transparent;}
-html {font-size:100.01%;}
-caption, cite, code, dfn, th, var {font-style: normal; font-weight: normal;}
-h1, h2, h3, h4, h5, h6 {font-weight: normal;}
-blockquote, q {quotes: none;}
-blockquote:before, blockquote:after, q:before, q:after {content: '';}
-:focus {outline: 0;}
-ins {text-decoration: underline;}
-del {text-decoration: line-through;}
-a {text-decoration: none;}
+html {
+background-image:url('img/billie_holiday/billie_holiday_@2X.png');
+}
 
-html {background-color: #000000;}
-body {font: 12pt/18pt 'Helvetica Neue', Arial, Helvetica, sans-serif; background-color: #000000; color: #ffffff;}
+body {
+margin-left: 30em;
+margin-top: 10em;
+width: 40em;
+}
 
-#body {background-color: #000000; padding: 1.5em 0.25em;}
-#content {position: relative; width: 500px; margin: 0 auto;}
+h1 {
+font-family:titleFont; 
+color:#586e75; 
+font-size:5em;
+margin-bottom: 0;
+}
 
-h1 {font-size: 3em; line-height:1; padding:0.5em 0 1em; text-align:center;}
-h1 a {color: #ffffff; padding: 0 0.25em; font-weight: bold;}
+a {
+font-family:linkFont; 
+color:#268bd2; 
+font-size:1.5em; 
+text-decoration:none;
+display: inline-block;
+margin-top: .2em;
+}
 
-h2, h3 {line-height: 18pt;}
-p, pre, ul, ol, blockquote, form {margin: 9pt 0 18pt; line-height: 18pt;}
-blockquote {padding-left: 1em; margin-left: 2pt; border-left: 0.25em solid #000000;}
-pre {overflow-x: auto; font-size: 11pt;}
-sup, sub {height: 0; line-height: 1; vertical-align: baseline; _vertical-align: bottom; position: relative;}
-sup {bottom: 0.5ex;}
-sub {top: 0.5ex;}
-sup a {font-weight: normal !important; padding: 0 1px;}
-hr {height: 0; margin: 0 0 18pt; border: solid #000000; border-width: 2pt 0 0;}
+a:hover {color:#d33682}
 
+div.links {
+padding-left: .25em;
+}
 
-
-#posts {margin: 0;}
-.post {position: relative; list-style: none; margin-bottom: 4.5em;}
-.post ul li {list-style: square;}
-.post img {max-width: 100%;}
-
-.post-body h3 {font-size: 1.25em; position: relative;}
-.post-body a {font-weight: bold; color: #ffffff; border-bottom: 1px solid transparent;}
-.post-body a:hover {color: #ffffff; border-bottom-color: #000000;}
-.post-body .image a {border-width: 0;}
-.post-body ul ul, .post-body ul ol, .post-body ol ol, .post-body ol ul,
-.post-body blockquote ul, .post-body blockquote ol {margin-left: 1.5em;}
-
-.text-post {position: relative; top: -2pt;}
-.text-post h3 {margin-bottom: 9pt;}
