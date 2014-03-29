@@ -1,7 +1,8 @@
 @font-face
 {
 font-family: titleFont;
-src: url(font/lato/lato_bold-webfont.woff);
+/*src: url(font/lato/lato_bold-webfont.woff); */
+src: url(font/ConvectionRegular.woff);
 }
 @font-face
 {
@@ -16,11 +17,11 @@ background-image:url('img/billie_holiday/billie_holiday_@2X.png');
 body {
 margin-left: 30em;
 margin-top: 10em;
-width: 40em;
+width: 50em;
 }
 
 h1 {
-font-family:titleFont; 
+font-family: titlefont;
 color:#586e75; 
 font-size:5em;
 margin-bottom: 0;
