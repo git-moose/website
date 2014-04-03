@@ -18,7 +18,13 @@ body {
 margin-left: 30em;
 margin-top: 10em;
 width: 50em;
+opacity: 0;
+transition: opacity .5s ease-in-out;
+-webkit-transition: opacity .5s ease-in-out;
 }
+	body:hover {
+		opacity: 1;
+	}
 
 h1 {
 font-family: titlefont;
@@ -36,7 +42,7 @@ display: inline-block;
 margin-top: .2em;
 }
 
-a:hover {color:#d33682}
+	a:hover {color:#d33682}
 
 div.links {
 padding-left: .25em;
