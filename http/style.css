@@ -1,64 +1,65 @@
-@font-face
-{
-font-family: titleFont;
-src: url(font/pt-sans/pts-bold.woff);
+@font-face {
+	font-family: titleFont;
+	src: url(font/pt-sans/pts-bold.woff);
 }
-@font-face
-{
-font-family: linkFont;
-src: url(font/lato/lato_bold-webfont.woff);
+
+@font-face {
+	font-family: linkFont;
+	src: url(font/lato/lato_bold-webfont.woff);
 }
+
+@keyframes fadeIn {
+	0% {opacity: 0;}
+	100% {opacity: 1;}
+}
+
+@keyframes dropDown {
+	0% {margin-top: 10em;}
+	100% {margin-top: 12em;}
+}
+
 @-webkit-keyframes fadeIn {
-	0% {
-		opacity: 0;
-	}
-	100% {
-		opacity: 1;
-	}
+	0% {opacity: 0;}
+	100% {opacity: 1;}
 }
+
 @-webkit-keyframes dropDown {
-	0% {
-		margin-top: 10em;
-	}
-	100% {
-		margin-top: 12em;
-	}
+	0% {margin-top: 10em;}
+	100% {margin-top: 12em;}
 }
 
 
-html {
-background-image:url('img/billie_holiday/billie_holiday_@2X.png');
-}
+html {background-image:url('img/billie_holiday/billie_holiday_@2X.png');}
 
 body {
-margin-top: 12em;
-margin-left: auto;
-margin-right: auto;
-width: 40em;
-
--webkit-animation: fadeIn .5s linear, dropDown .7s ease-out;
-
+	margin-top: 12em;
+	margin-left: auto;
+	margin-right: auto;
+	width: 40em;
+	
+	animation: fadeIn .5s linear, dropDown .7s ease-out;
+	-webkit-animation: fadeIn .5s linear, dropDown .7s ease-out;
 }
 
 h1 {
-font-family: titlefont;
-color:#586e75; 
-font-size:5em;
-margin-bottom: 0;
+	font-family: titlefont;
+	color:#586e75; 
+	font-size:5em;
+	margin: 0;
 }
+
+nav {padding-left: .25em;}
 
 a {
-font-family:linkFont; 
-color:#268bd2; 
-font-size:1.7em; 
-text-decoration:none;
-display: inline-block;
-margin-top: .2em;
+	font-family:linkFont; 
+	color:#268bd2; 
+	font-size:1.7em; 
+	text-decoration:none;
+	display: inline-block;
+	margin-top: .2em;
 }
 
-	a:hover {color:#d33682}
+a:hover {color:#d33682}
 
-div.links {
-padding-left: .25em;
-}
+
 
