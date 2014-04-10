@@ -1,7 +1,6 @@
 @font-face
 {
 font-family: titleFont;
-/*src: url(font/lato/lato_bold-webfont.woff); */
 src: url(font/pt-sans/pts-bold.woff);
 }
 @font-face
@@ -9,22 +8,6 @@ src: url(font/pt-sans/pts-bold.woff);
 font-family: linkFont;
 src: url(font/lato/lato_bold-webfont.woff);
 }
-
-html {
-background-image:url('img/billie_holiday/billie_holiday_@2X.png');
-}
-
-body {
-margin-left: 30em;
-margin-top: 10em;
-width: 50em;
-
--webkit-animation-name: dropHeader;
--webkit-animation-iteration-count: once;
--webkit-animation-timing-function: ease-in;
--webkit-animation-duration: 1s;
-}
-
 @-webkit-keyframes dropHeader {
 	0% {
 		opacity: 0;
@@ -34,6 +17,22 @@ width: 50em;
 	}
 }
 
+
+html {
+background-image:url('img/billie_holiday/billie_holiday_@2X.png');
+}
+
+body {
+margin-top: 12em;
+margin-left: auto;
+margin-right: auto;
+width: 40em;
+
+-webkit-animation-name: dropHeader;
+-webkit-animation-iteration-count: 1;
+-webkit-animation-timing-function: ease-in;
+-webkit-animation-duration: 1s;
+}
 
 h1 {
 font-family: titlefont;
