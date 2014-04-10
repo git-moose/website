@@ -8,12 +8,20 @@ src: url(font/pt-sans/pts-bold.woff);
 font-family: linkFont;
 src: url(font/lato/lato_bold-webfont.woff);
 }
-@-webkit-keyframes dropHeader {
+@-webkit-keyframes fadeIn {
 	0% {
 		opacity: 0;
 	}
-	100 {
+	100% {
 		opacity: 1;
+	}
+}
+@-webkit-keyframes dropDown {
+	0% {
+		margin-top: 10em;
+	}
+	100% {
+		margin-top: 12em;
 	}
 }
 
@@ -28,10 +36,8 @@ margin-left: auto;
 margin-right: auto;
 width: 40em;
 
--webkit-animation-name: dropHeader;
--webkit-animation-iteration-count: 1;
--webkit-animation-timing-function: ease-in;
--webkit-animation-duration: 1s;
+-webkit-animation: fadeIn .5s linear, dropDown .7s ease-out;
+
 }
 
 h1 {
