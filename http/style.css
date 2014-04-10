@@ -18,13 +18,22 @@ body {
 margin-left: 30em;
 margin-top: 10em;
 width: 50em;
-opacity: 0;
-transition: opacity .5s ease-in-out;
--webkit-transition: opacity .5s ease-in-out;
+
+-webkit-animation-name: dropHeader;
+-webkit-animation-iteration-count: once;
+-webkit-animation-timing-function: ease-in;
+-webkit-animation-duration: 1s;
 }
-	body:hover {
+
+@-webkit-keyframes dropHeader {
+	0% {
+		opacity: 0;
+	}
+	100 {
 		opacity: 1;
 	}
+}
+
 
 h1 {
 font-family: titlefont;
