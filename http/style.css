@@ -14,8 +14,8 @@
 }
 
 @keyframes dropDown {
-	0% {margin-top: 10em;}
-	100% {margin-top: 12em;}
+	0% {margin-top: -1em;}
+	100% {margin-top: 0em;}
 }
 
 @-webkit-keyframes fadeIn {
@@ -24,8 +24,8 @@
 }
 
 @-webkit-keyframes dropDown {
-	0% {margin-top: 10em;}
-	100% {margin-top: 12em;}
+	0% {margin-top: -1em;}
+	100% {margin-top: 0em;}
 }
 
 
@@ -36,16 +36,16 @@ body {
 	margin-left: auto;
 	margin-right: auto;
 	width: 40em;
-	
-	animation: fadeIn .5s linear, dropDown .7s ease-out;
-	-webkit-animation: fadeIn .5s linear, dropDown .7s ease-out;
 }
 
 h1 {
 	font-family: titlefont;
 	color:#586e75; 
 	font-size:5em;
-	margin: 0;
+	margin-bottom: 0;
+	
+	animation: fadeIn .5s linear, dropDown .7s ease-out;
+	-webkit-animation: fadeIn .5s linear, dropDown .7s ease-out;
 }
 
 nav {padding-left: .25em;}
