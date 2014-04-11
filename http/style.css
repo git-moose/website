@@ -57,9 +57,16 @@ a {
 	text-decoration:none;
 	display: inline-block;
 	margin-top: .2em;
+	width: 22em;
+	
+	transition:padding-left .5s;
+	-webkit-transition: padding-left .5s;
 }
 
-a:hover {color:#d33682}
+a:hover {
+	color:#d33682;
+	padding-left: .5em;
+}
 
 
 
