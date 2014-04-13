@@ -1,6 +1,9 @@
 @font-face {
 	font-family: titleFont;
-	src: url(font/pt-sans/pts-bold.woff);
+	src: url('font/pt-sans/pts-bold.eot?#iefix') format('embedded-opentype'),
+		url('font/pt-sans/pts-bold.woff') format('woff'),
+		url('font/pt-sans/pts-bold.ttf') format('truetype'),
+		url('font/pt-sans/pts-bold.svg#PTSans-Bold') format('svg');
 }
 
 @font-face {
@@ -35,7 +38,7 @@ body {
 	margin-top: 12em;
 	margin-left: auto;
 	margin-right: auto;
-	width: 50em;
+	width: 37.5em;
 }
 
 h1 {
