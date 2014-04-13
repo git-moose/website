@@ -72,11 +72,12 @@ a {
 	transition:padding-left .5s;
 	-webkit-transition: padding-left .5s;
 }
-
 a:hover {
 	color:#d33682;
 	padding-left: .5em;
 }
+a:active {color:#d33682;}
+
 
 
 
