@@ -21,8 +21,8 @@
 	foaf:account <http://www.linkedin.com/in/brendanheussler> ;
 	foaf:account <https://twitter.com/beedaan> ;
 	rdfs:label "Brendan Heussler"^^xsd:string ;
-	rdfs:isDefinedBy <me.rdf> .
+	rdfs:isDefinedBy <me.ttl> .
 	
-<me.rdf> a foaf:PersonalProfileDocument ;                                           
+<me.ttl> a foaf:PersonalProfileDocument ;                                           
 	foaf:maker <me> ;
 	foaf:primaryTopic <me> .
