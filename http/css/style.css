@@ -48,14 +48,18 @@ body {
 	width: 38em;
 }
 
+header {display:none;}
+
 h1 {
 	font-family: PTSans-Bold;
 	color:#586e75; 
 	font-size:5em;
 	margin-bottom: 0;
 	
+	/*
 	animation: fadeIn .5s linear, dropDown .7s ease-out;
 	-webkit-animation: fadeIn .5s linear, dropDown .7s ease-out;
+	*/
 }
 
 nav {padding-left: .25em;}

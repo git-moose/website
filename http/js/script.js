@@ -1,5 +1,5 @@
 $(document).ready(function() {
-	$("h1").click(function() {
-		$(this).hide();
+	$("header").fadeIn(2000, function() {
+		$("header").transition({ y:'40px'});
 	});
 });
