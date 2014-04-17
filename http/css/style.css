@@ -18,48 +18,24 @@
 		url('../font/lato/Lato-Bol.ttf') format('truetype');
 }
 
-@keyframes fadeIn {
-	0% {opacity: 0;}
-	100% {opacity: 1;}
-}
-
-@keyframes dropDown {
-	0% {margin-top: -.4em;}
-	100% {margin-top: 0em;}
-}
-
-@-webkit-keyframes fadeIn {
-	0% {opacity: 0;}
-	100% {opacity: 1;}
-}
-
-@-webkit-keyframes dropDown {
-	0% {margin-top: -.4em;}
-	100% {margin-top: 0em;}
-}
-
 
 html {background-image:url('../img/billie_holiday/billie_holiday_@2X.png');}
 
 body {
-	margin-top: 12em;
+	margin-top: 10em;
 	margin-left: auto;
 	margin-right: auto;
 	width: 38em;
+
 }
 
-header {display:none;}
+header {opacity:0;}
 
 h1 {
 	font-family: PTSans-Bold;
 	color:#586e75; 
 	font-size:5em;
 	margin-bottom: 0;
-	
-	/*
-	animation: fadeIn .5s linear, dropDown .7s ease-out;
-	-webkit-animation: fadeIn .5s linear, dropDown .7s ease-out;
-	*/
 }
 
 nav {padding-left: .25em;}
@@ -72,6 +48,7 @@ a {
 	display: inline-block;
 	margin-top: .2em;
 	width: 22em;
+	opacity: 0;
 	
 	transition:padding-left .5s;
 	-webkit-transition: padding-left .5s;
