@@ -146,7 +146,7 @@
         <rdfs:isDefinedBy rdf:resource="http://bheussler.name/me.ttl"/>
         <foaf:workplaceHomepage rdf:resource="http://inovexcorp.com/"/>
         <foaf:schoolHomepage rdf:resource="http://www.conncoll.edu/"/>
-        <foaf:depiction rdf:resource="http://www.gravatar.com/avatar/9458226d384355e50fc498c4b31d7b88"/>
+        <foaf:depiction rdf:resource="http://www.gravatar.com/avatar/9458226d384355e50fc498c4b31d7b88?s=840"/>
         <foaf:account rdf:resource="http://www.linkedin.com/in/brendanheussler"/>
         <foaf:account rdf:resource="https://github.com/beedaan"/>
         <foaf:account rdf:resource="https://twitter.com/beedaan"/>

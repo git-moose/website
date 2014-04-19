@@ -14,7 +14,7 @@
 	foaf:homepage <> ;
 	foaf:workplaceHomepage <http://inovexcorp.com/> ;
 	foaf:schoolHomepage <http://www.conncoll.edu/> ;
-	foaf:depiction <http://www.gravatar.com/avatar/9458226d384355e50fc498c4b31d7b88> ;
+	foaf:depiction <http://www.gravatar.com/avatar/9458226d384355e50fc498c4b31d7b88?s=840> ;
 	foaf:account <https://github.com/beedaan> ;
 	foaf:account <https://www.youtube.com/channel/UCGEoFFsga9LtCrHmf85O3PQ> ;
 	foaf:account <https://www.facebook.com/beedaan> ;
