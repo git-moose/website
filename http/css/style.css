@@ -31,7 +31,7 @@ body {
 
 header {opacity:0;}
 
-h1 {
+#name {
 	font-family: PTSans-Bold;
 	color:#586e75; 
 	font-size:5em;
@@ -40,7 +40,7 @@ h1 {
 
 nav {padding-left: .25em;}
 
-a {
+a.link {
 	font-family:Lato-Bold; 
 	color:#268bd2; 
 	font-size:1.7em; 
@@ -53,11 +53,11 @@ a {
 	transition:padding-left .5s;
 	-webkit-transition: padding-left .5s;
 }
-a:hover {
+a.link:hover {
 	color:#d33682;
 	padding-left: .5em;
 }
-a:active {color:#d33682;}
+a.link:active {color:#d33682;}
 
 
 

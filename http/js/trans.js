@@ -5,7 +5,7 @@ $(function() {
 function init() {
 	$("header").transition({opacity:1}, 800, 'linear');
 	$("body").transition({y:'2em'}, 1400, 'easeOutQuint', function() {
-		unfold("a:first");
+		unfold("a.link:first");
 	});
 }
 
