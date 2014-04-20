@@ -10,7 +10,7 @@ function init() {
 }
 
 function unfold(node) {
-	$(node).transition({perspective: '400px', rotateY: '-360deg', opacity: 1}, 100, 'snap', function() {
+	$(node).transition({perspective: '400px', rotateY: '-360deg', opacity: 1}, 250, 'snap', function() {
 		unfold(this.next());
 	});
 }
