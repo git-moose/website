@@ -46,7 +46,7 @@
 html {background-image:url('../img/billie_holiday/billie_holiday_@2X.png');}
 
 body {
-	margin-top: 10em;
+	margin-top: 12em;
 	margin-left: auto;
 	margin-right: auto;
 	width: 38em;
@@ -61,17 +61,20 @@ header {opacity:0;}
 	font-size:5em;
 	margin-bottom: 0;
 	
-	-webkit-animation: cycleSolarized 40s infinite;
-	animation: cycleSolarized 30s infinite;
+	-webkit-animation: cycleSolarized 60s infinite;
+	animation: cycleSolarized 60s infinite;
 }
 
-nav {padding-left: .25em;}
+.content {
+	padding-left: .25em;
+	opacity: 0;
+}
 
 div.copy {
 	color:#268bd2;
 	
-	-webkit-animation: cycleSolarized 30s infinite;
-	animation: cycleSolarized 30s infinite;
+	-webkit-animation: cycleSolarized 60s infinite;
+	animation: cycleSolarized 60s infinite;
 }
 
 a.link {
@@ -82,7 +85,6 @@ a.link {
 	display: inline-block;
 	padding-top: .2em;
 	width: 22em;
-	opacity: 0;
 	
 	transition:padding-left .5s;
 	-webkit-transition: padding-left .5s;

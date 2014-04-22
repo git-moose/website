@@ -3,14 +3,9 @@ $(function() {
 });
 
 function init() {
-	$("header").transition({opacity:1}, 800, 'linear');
-	$("body").transition({y:'2em'}, 1400, 'easeOutQuint', function() {
-		unfold("a.link:first");
-	});
-}
-
-function unfold(node) {
-	$(node).transition({perspective: '400px', rotateY: '-360deg', opacity: 1}, 250, 'snap', function() {
-		unfold(this.next());
+	$('header').addClass('animated fadeInDown');
+	$('header').one('webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend', function() {
+		$('.content').css('opacity',1);
+		$('.content').addClass('animated bounceInUp');
 	});
 }
