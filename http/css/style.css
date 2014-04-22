@@ -18,6 +18,30 @@
 		url('../font/lato/Lato-Bol.ttf') format('truetype');
 }
 
+@keyframes cycleSolarized {
+	0% {color:#268bd2;}
+	12.5% {color:#2aa198;}
+	25% {color:#859900;}
+	37.5% {color:#b58900;}
+	50% {color:#cb4b16;}
+	62.5{color:#dc322f;}
+	75% {color:#d33682;}
+	87.5% {color:#6c71c4;}
+	100% {color:#268bd2;}
+}
+
+@-webkit-keyframes cycleSolarized {
+	0% {color:#268bd2;}
+	12.5% {color:#2aa198;}
+	25% {color:#859900;}
+	37.5% {color:#b58900;}
+	50% {color:#cb4b16;}
+	62.5{color:#dc322f;}
+	75% {color:#d33682;}
+	87.5% {color:#6c71c4;}
+	100% {color:#268bd2;}
+}
+
 
 html {background-image:url('../img/billie_holiday/billie_holiday_@2X.png');}
 
@@ -33,16 +57,26 @@ header {opacity:0;}
 
 #name {
 	font-family: PTSans-Bold;
-	color:#586e75; 
+	color:#268bd2; 
 	font-size:5em;
 	margin-bottom: 0;
+	
+	-webkit-animation: cycleSolarized 40s infinite;
+	animation: cycleSolarized 30s infinite;
 }
 
 nav {padding-left: .25em;}
 
+div.copy {
+	color:#268bd2;
+	
+	-webkit-animation: cycleSolarized 30s infinite;
+	animation: cycleSolarized 30s infinite;
+}
+
 a.link {
 	font-family:Lato-Bold; 
-	color:#268bd2; 
+	color:#586e75; 
 	font-size:1.7em; 
 	text-decoration:none;
 	display: inline-block;
@@ -54,10 +88,10 @@ a.link {
 	-webkit-transition: padding-left .5s;
 }
 a.link:hover {
-	color:#d33682;
 	padding-left: .5em;
+	color: inherit;
 }
-a.link:active {color:#d33682;}
+a.link:active {color:#inherit;}
 
 
 
