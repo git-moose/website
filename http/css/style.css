@@ -65,7 +65,8 @@ footer {
 	height: .3em;
 	width: 37em;
 	background: #268bd2;
-	border-radius: 50em;
+	border: 0;
+	border-radius: 1em;
 	
 	-webkit-animation: cycleSolarizedBackground 60s infinite;
 	animation: cycleSolarizedBackground 60s infinite;
