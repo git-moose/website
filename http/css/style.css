@@ -39,9 +39,10 @@ div.copy {
 }
 
 p {
+	margin-top: .5em;
 	font-family:Lato-Reg; 
 	color:#586e75; 
-	font-size:1.5em; 
+	font-size:1.45em; 
 }
 
 span.cycleColor {
@@ -52,13 +53,18 @@ span.cycleColor {
 }
 
 a {
+	font-family:Lato-Bold; 
 	color:#586e75; 
-	text-decoration:underline;
+	text-decoration:none;
 }
 a:hover {
 	color: inherit;
+	text-decoration: underline;
 }
-a:active {color:#inherit;}
+a:active {
+	color:#inherit;
+	text-decoration: underline;
+}
 
 footer {
 	position: relative;
@@ -67,7 +73,7 @@ footer {
 }
 
 .colorLine {
-	height: .2em;
+	height: .1em;
 	width: 37em;
 	background: #268bd2;
 	border: 0;
@@ -94,8 +100,4 @@ p.alignright {
 	float: right;
 	margin-top: .7em;
 	margin-right: .4em;
-}
-
-a.footer {
-	text-decoration:none;
 }
