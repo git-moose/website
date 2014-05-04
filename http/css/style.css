@@ -2,10 +2,11 @@ html {background-image:url('../img/billie_holiday/billie_holiday_@2X.png');}
 
 body {
 	position: relative;
-	margin-top: 12em;
+	margin-top: 10em;
 	margin-left: auto;
 	margin-right: auto;
 	width: 38em;
+	overflow: scroll;
 
 }
 
@@ -37,23 +38,27 @@ div.copy {
 	animation: cycleSolarized 60s infinite;
 }
 
-a.link {
-	font-family:Lato-Bold; 
+p {
+	font-family:Lato-Reg; 
 	color:#586e75; 
-	font-size:1.7em; 
-	text-decoration:none;
-	display: inline-block;
-	padding-top: .2em;
-	width: 22em;
-	
-	transition:padding-left .5s;
-	-webkit-transition: padding-left .5s;
+	font-size:1.5em; 
 }
-a.link:hover {
-	padding-left: .5em;
+
+span.cycleColor {
+	color:#268bd2;
+	
+	-webkit-animation: cycleSolarized 60s infinite;
+	animation: cycleSolarized 60s infinite;
+}
+
+a {
+	color:#586e75; 
+	text-decoration:underline;
+}
+a:hover {
 	color: inherit;
 }
-a.link:active {color:#inherit;}
+a:active {color:#inherit;}
 
 footer {
 	position: relative;
@@ -62,7 +67,7 @@ footer {
 }
 
 .colorLine {
-	height: .3em;
+	height: .2em;
 	width: 37em;
 	background: #268bd2;
 	border: 0;
@@ -72,9 +77,25 @@ footer {
 	animation: cycleSolarizedBackground 60s infinite;
 }
 
-#raspi {
-	float: right;
-	margin-top: .5em;
-	padding-right: 1em; 
+div.cycleColor {
+	color:#268bd2;
+	
+	-webkit-animation: cycleSolarized 60s infinite;
+	animation: cycleSolarized 60s infinite;
 }
 
+p.alignleft {
+	float: left;
+	margin-top: .7em;
+	margin-left: .4em;
+}
+
+p.alignright {
+	float: right;
+	margin-top: .7em;
+	margin-right: .4em;
+}
+
+a.footer {
+	text-decoration:none;
+}

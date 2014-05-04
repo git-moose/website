@@ -17,3 +17,12 @@
 		url('../font/lato/Lato-Bol.woff') format('woff'),
 		url('../font/lato/Lato-Bol.ttf') format('truetype');
 }
+
+@font-face {
+	font-family: Lato-Reg;
+	src:url('../font/lato/Lato-Reg.eot'),
+		url('../font/lato/Lato-Reg.eot#iefix') format('embedded-opentype'),
+		url('../font/lato/Lato-Reg.svg#latobold') format('svg'),
+		url('../font/lato/Lato-Reg.woff') format('woff'),
+		url('../font/lato/Lato-Reg.ttf') format('truetype');
+}
