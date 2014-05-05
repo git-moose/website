@@ -53,17 +53,16 @@ span.cycleColor {
 }
 
 a {
-	/*font-family:Lato-Bold;*/
 	color:#586e75; 
 	text-decoration:none;
 }
 a:hover {
 	color: inherit;
-	/*text-decoration: underline;*/
+	text-decoration: underline;
 }
 a:active {
 	color:#inherit;
-	/*text-decoration: underline;*/
+	text-decoration: underline;
 }
 
 footer {
