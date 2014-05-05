@@ -1,0 +1,28 @@
+@font-face {
+	font-family: PTSans-Bold;
+	font-weight: bold;
+	src:url('../font/pt-sans/pts-bold.eot'),
+		url('../font/pt-sans/pts-bold.eot?#iefix') format('embedded-opentype'),
+		url('../font/pt-sans/pts-bold.svg#pt_sansbold') format('svg'),
+		url('../font/pt-sans/pts-bold.woff') format('woff'),
+		url('../font/pt-sans/pts-bold.ttf') format('truetype');
+}
+
+@font-face {
+	font-family: Lato-Bold;
+	font-weight: bold;
+	src:url('../font/lato/Lato-Bol.eot'),
+		url('../font/lato/Lato-Bol.eot#iefix') format('embedded-opentype'),
+		url('../font/lato/Lato-Bol.svg#latobold') format('svg'),
+		url('../font/lato/Lato-Bol.woff') format('woff'),
+		url('../font/lato/Lato-Bol.ttf') format('truetype');
+}
+
+@font-face {
+	font-family: Lato-Reg;
+	src:url('../font/lato/Lato-Reg.eot'),
+		url('../font/lato/Lato-Reg.eot#iefix') format('embedded-opentype'),
+		url('../font/lato/Lato-Reg.svg#latobold') format('svg'),
+		url('../font/lato/Lato-Reg.woff') format('woff'),
+		url('../font/lato/Lato-Reg.ttf') format('truetype');
+}
