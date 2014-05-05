@@ -25,10 +25,13 @@ header {
 	animation: cycleSolarized 60s infinite;
 }
 
+#content {
+	opacity: 0;
+}
+
 main {
 	position: relative;
 	padding-left: .25em;
-	opacity: 0;
 }
 
 div.copy {
@@ -68,7 +71,6 @@ a:active {
 footer {
 	position: relative;
 	margin-top: 1em;
-	opacity: 0;
 }
 
 .colorLine {
