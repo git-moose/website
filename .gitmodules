@@ -1,0 +1,3 @@
+[submodule "http/resume"]
+	path = http/resume
+	url = git@github.com:beedaan/resume.git
