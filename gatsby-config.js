@@ -4,7 +4,11 @@ require(`dotenv`).config({
 
 module.exports = {
   siteMetadata: {
-    siteTitleAlt: `Minimal Blog - Gatsby Theme`,
+    siteTitleAlt: `Brendan Heussler`,
+    siteUrl: `https://builtbybrendan.com`,
+    siteDescription: `The personal website for Brendan Heussler, a Software Engineer living in San Diego, California.  Writes on topics such as Java, Javascript, and anything in between`,
+    siteLanguage: `en`,
+    author: `@beedaan`,
   },
   plugins: [
     {
@@ -23,11 +27,7 @@ module.exports = {
         externalLinks: [
           {
             name: `Twitter`,
-            url: `https://twitter.com/lekoarts_de`,
-          },
-          {
-            name: `Instagram`,
-            url: `https://www.instagram.com/lekoarts.de/`,
+            url: `https://twitter.com/beedaan`,
           },
         ],
       },
