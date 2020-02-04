@@ -1,3 +1,5 @@
+const path = require('path')
+
 require(`dotenv`).config({
     path: `.env`,
 })
@@ -31,6 +33,7 @@ module.exports = {
                         url: `https://twitter.com/beedaan`,
                     },
                 ],
+                mdx: false
             },
         },
         {
@@ -66,6 +69,27 @@ module.exports = {
         },
         `gatsby-plugin-offline`,
         `gatsby-plugin-netlify`,
+        `gatsby-plugin-sharp`,
+        {
+            resolve: `gatsby-plugin-mdx`,
+            options: {
+                gatsbyRemarkPlugins: [
+                    {
+                        resolve: `gatsby-remark-images`,
+                        options: {
+                            withWebp: true,
+                            showCaptions: true
+                        },
+                    },
+                ],
+            },
+        },
+        {
+            resolve: `gatsby-source-filesystem`,
+            options: {
+                path: path.join(__dirname, `content` , `pages`),
+            },
+        }
         // `gatsby-plugin-webpack-bundle-analyser-v2`,
     ],
 }
