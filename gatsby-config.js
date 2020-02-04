@@ -33,6 +33,7 @@ module.exports = {
                         url: `https://twitter.com/beedaan`,
                     },
                 ],
+                /* Required because we are using gatsby-plugin-mdx */
                 mdx: false
             },
         },
@@ -69,6 +70,14 @@ module.exports = {
         },
         `gatsby-plugin-offline`,
         `gatsby-plugin-netlify`,
+        {
+            resolve: `gatsby-source-filesystem`,
+            options: {
+                name: `images`,
+                path: path.join(__dirname, `src`, `img`),
+            },
+        },
+        `gatsby-transformer-sharp`,
         `gatsby-plugin-sharp`,
         {
             resolve: `gatsby-plugin-mdx`,
@@ -84,12 +93,6 @@ module.exports = {
                 ],
             },
         },
-        {
-            resolve: `gatsby-source-filesystem`,
-            options: {
-                path: path.join(__dirname, `content` , `pages`),
-            },
-        }
         // `gatsby-plugin-webpack-bundle-analyser-v2`,
     ],
 }
