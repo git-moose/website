@@ -8,7 +8,7 @@ export default () => {
             file(relativePath: {eq: "bush_trim.png"}) {
                 id
                 childImageSharp {
-                    fixed(quality: 100, width: 200, height: 200) {
+                    fixed(quality: 85, width: 200, height: 200) {
                         ...GatsbyImageSharpFixed_withWebp
                     }
                 }
