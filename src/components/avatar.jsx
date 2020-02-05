@@ -9,7 +9,7 @@ export default () => {
                 id
                 childImageSharp {
                     fixed(quality: 85, width: 200, height: 200) {
-                        ...GatsbyImageSharpFixed_withWebp
+                        ...GatsbyImageSharpFixed_withWebp_tracedSVG
                     }
                 }
             }
