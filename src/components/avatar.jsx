@@ -8,8 +8,8 @@ export default () => {
             file(relativePath: {eq: "bush_trim.png"}) {
                 id
                 childImageSharp {
-                    fixed(quality: 85, width: 200, height: 200) {
-                        ...GatsbyImageSharpFixed_withWebp_tracedSVG
+                    fluid(quality: 85) {
+                        ...GatsbyImageSharpFluid_withWebp_tracedSVG
                     }
                 }
             }
@@ -21,6 +21,6 @@ export default () => {
     };
 
     return (
-        <Img fixed={data.file.childImageSharp.fixed} imgStyle={style} alt="Brendan Heussler"/>
+        <Img fluid={data.file.childImageSharp.fluid} imgStyle={style} alt="Brendan Heussler"/>
     )
 }

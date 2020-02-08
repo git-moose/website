@@ -1,11 +1,22 @@
 import Avatar from "../../../components/avatar.jsx"
+import { Flex, Box } from "@theme-ui/components"
+import { Styled } from 'theme-ui'
 
-<Text sx={{ fontSize: [4, 5, 6], fontWeight: `bold`, color: `heading` }}>
-  Hi.
-</Text>
+import { Link } from "gatsby"
 
-I'm Brendan - currently living and breathing in San Diego, California.  I'm a software engineer at [Swing AI](https://swingai.golf/).
-We built a [mobile app](https://apps.apple.com/us/app/swing-index/id1364108595) that helps you get better at golf.
-Currently, I'm working on a [side project](./my-new-side-project) and writing about it.
-
-<Avatar />
+<Flex sx={{ flexWrap: 'wrap', justifyContent: 'space-between'}}>
+  <Box mt={23} mb={20} sx={{ width: [150, 205, 205] }}>
+    <Avatar />
+  </Box>
+  <Box sx={{ width: ['100%', '55%', '65%']}}>
+    <Text sx={{ fontSize: [4, 5, 6], fontWeight: `bold`, color: `heading` }}>
+      Hi.
+    </Text>
+    <Text sx={{ fontSize: [1, 2, 3] }}>
+        I'm Brendan - currently living and breathing in San Diego, California.
+        I'm a software engineer at <a href="https://swingai.golf/">Swing AI</a>.
+        We built a <a href="https://apps.apple.com/us/app/swing-index/id1364108595">mobile app</a> that helps you get better at golf.
+        Currently, I'm working on a <Styled.a as={Link} to="/my-new-side-project">side project</Styled.a> and writing about it.
+    </Text>
+  </Box>
+</Flex>
