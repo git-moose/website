@@ -1,12 +1,10 @@
 ---
 title: My New Side Project
-date: 2020-01-30
+date: 2020-02-17
 banner: ./nick-morrison-FHnnjk1Yj7Y-unsplash.jpg
 tags:
   - MovieQuiz
 ---
-
-# Work in Progress
 
 ![Photo by Nick Morrison from Unpslash](./nick-morrison-FHnnjk1Yj7Y-unsplash.jpg)
 
@@ -22,25 +20,32 @@ I'm going to use this idea to learn some new technologies that I wouldn't normal
 
 I also want to build a web application from the ground up.  Every side project I've done so far has just been a static website.  I want to go through the process of deciding what database I'm going to use, how my deployment will run, the whole nine yards.  My focus is going to be on simplicity.  I'm just a one man team.  I don't want a complicated infrastructure.  I want the ability to focus on just the business logic as much as possible.
 
-I'm going to write about my decisions as I go through them.  This industry leans heavily on blog article and online documentation.  My stock as a software developer goes up if I could get a blog post that becomes the go-to resource for something like selecting a database. I wrote an article on Medium awhile back that described [Partial Collapses in Bootstrap 3](https://medium.com/@beedaan/partial-collapse-with-bootstrap-3-ef4e6bf85537).  The article got some good traction, but today I think Medium is a terrible platform to publish to and I'd rather own my own content
+There are two frameworks that look particularly interesting: React Native and NativeScript.  Apparently these frameworks let you write an app in Javascript, and then compile it to iOS and Android.  If that's true and if it's actually viable, that means I would be able to build a mobile app without knowing Swift or the Android SDK.  This would be an incredibly powerful skill to know.
+
+I'm going to write about my decisions as I go through them.  This industry leans heavily on blog article and online documentation.  My stock as a software developer goes up if I could get a blog post that becomes the go-to resource for something like selecting a database. I wrote an article on Medium awhile back that described [Partial Collapses in Bootstrap 3](https://medium.com/@beedaan/partial-collapse-with-bootstrap-3-ef4e6bf85537).  The article got some good traction, but today I think Medium is a terrible platform to publish to and I'd rather own my own content.
+
+## MVP
+
+Version 1 of the app is going to be a web application.  I don't want users to have to download anything.  There's also not going to be a main display screen.  Integrating with a movie theater is going to be complicated.  I'm not sure if the preview reel is a roll of film, or if it's a digital display.  If it is a digital display, can we dynamically change what is projected?  These are problems I don't want to worry about right now.
+
+The quiz will be controlled from a mobile phone.  There will be a QuizMaster who sets up the quiz.  He'll share the quiz URL with the participants.  Once the participants are in the lobby, the QuizMaster will start the quiz.  The application will take care of the rest of the experience from there.
+
+There will be no user accounts.  I don't want there to be any roadblocks between the players and the quiz.  The names will initialize as `Anonymous01` and so on.  The players will have the ability to change their display name, but that feature will be totally optional.  I want the players to feel like their identity is protected, but I also want to give them the option to put their name in if they feel comfortable.  I'll have to implement an input black list to prevent players from entering profanity.
+
+Each quiz will have a theme.  The QuizMaster will select the theme when he's setting up the quiz.  The themes will be along the lines of `Action`, `Horror`, and other movie genres. The quiz will have a series of multiple choice questions.  The players will have a short amount of time to enter each question so they can't look up the answers online.
+
+After each question, the app will display the current leaderboard with all of the participants.  The quiz URL will also be displayed so that new players can join in the middle.  Players that join in the middle will be taken to the current question in the quiz.  The'll start with 0 correct answers and be at a disadvantage, but they will be in the quiz.
+
+At the end of the quiz, the application will display the final leaderboard and congratulate the winner.  That will conclude the MovieQuiz experience.
 
 ## Potential Problems
-
-
-I can already tell you that it's not going to be a linear journey.  I actually started working on this project last December.  I've already done a complete 360 on some of my decisions.  For the sake of transparency, I'm going to go back and write about those as if they were happening in real time.  Why?  Because I actually learned from it.  I've been able to take what I've learned on this side project and apply it to my day job.
-
-No logins, no downloading, names are even optional.  Streamlining the user experience is going to be a pillar of the app.  The rest of the pillars, well, I'm still figuring that out.  My goal is to write about my decisions as I go through them.  I can already tell you that it's not going to be a linear journey.  I actually started working on this project last December.  I've already done a complete 360 on some of my decisions.  For the sake of transparency, I'm going to go back and write about those as if they were happening in real time.  Why?  Because I actually learned from it.  I've been able to take what I've learned on this side project and apply it to my day job.
-
-My project has the working name of MovieQuiz.  Naming things is the hardest part of programming.  *If* I get far enough along that I need to seriously start marketing this bad boy, I'll probably change the name.  Something that ends in a 'fy'.  For version 1, I'm going to build a mobile webapp that can be used on any phone.  For the sake of simplicity and just getting an MVP together, I'm going to skip the integration with a main viewing screen.  The entire experience will be controlled from phones.  There will be a QuizMaster that will configure the quiz.  He'll choose a quiz topic, get a short link URL and distribute it to his friends.  Finally, he'll start the quiz.  His job is done and the quiz runs.
-
-![Photo by Krists Luhaers from Unpslash](./krists-luhaers-AtPWnYNDJnM-unsplash.jpg)
 
 If you've read this much, then you've probably noticed the elephant in the room.
 
 > If you think this is a good idea, why are you sharing it with everyone?
 
-First of all, it's not an original idea.  I think Nintendo already has something like it called Jambox.  More importantly though, ideas are cheap, execution is golden.  If you really have *such* a good idea that you're not going to tell people about it.  Then it's never going to get off the ground because you're too nervous to execute.  Or you're nervous that your execution will be total shit.  Instagram proves this point to the moon and back.
+First of all, it's not an original idea.  I think Nintendo already has something like it called Jambox.  More importantly though, ideas are cheap, execution is golden.  Instagram proves this point to the moon and back.
 
-I want to share my experience with you because I want to learn myself.  By explaining the process in a blog, it will help me learn and become a better enigneer.  It also opens up the potential for two way collaboration.  Remember, I'm just working on this by myself for now.  I don't want to be alone with my thoughts!
+I want to build the app and blog about my experience simultaneously.  This could potentially be too ambitious.  I might stop working on the app if I feel like I can't keep up with the blog posts.  This is all a side project so if I feel like I can't make enough progress, I might just drop everything.
 
-
+I want to share my experience with you because I want to learn myself.  By explaining the process in a blog, it will help understand what I am building.  It also opens up the potential for two way collaboration.  Remember, I'm just working on this by myself for now.  I don't want to be alone with my thoughts!
