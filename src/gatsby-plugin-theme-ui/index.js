@@ -43,16 +43,22 @@ export default {
     colors: {
         ...baseTheme.colors,
         primary: `#42A5F5`,
+        codeBackground: tailwind.colors.gray[2],
         modes: {
             dark: {
                 ...baseTheme.colors.modes.dark,
                 primary: `#42A5F5`,
+                codeBackground: tailwind.colors.gray[8],
             },
         },
     },
     styles: {
         ...baseTheme.styles,
-        ...headingStyles
+        ...headingStyles,
+        inlineCode: {
+            color: `text`,
+            backgroundColor: `codeBackground`
+        }
     },
     text: {
         ...baseTheme.text,
