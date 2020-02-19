@@ -10,9 +10,9 @@ tags:
 
 You know how when you go to the movies with your friends and while you're watching the previews, there's movie trivia that comes up?  What if you could actually submit your answers and compete with the rest of the audience.  You wouldn't have to download an app or even login, you would just have to enter a special URL and you would be in.  That's the elevator pitch of my new side project and since naming things is the hardest part about programming, it's going to be called MovieQuiz.
 
-The cool part about the experience is that you don't *need* your phone.  You could play along like you always would and just keep score in your head.  I believe that smartphones are amazing in so many ways, but they often get in the way of interacting with the world around us.  Instead, I'd like to create technology that enhances an experience that already exists.
+I believe that smartphones are amazing in so many ways, but they often get in the way of interacting with the world around us.  I'd like to create technology that enhances an experience that already exists.  Smart phones should *augment* reality, not create a *virtual* reality, especially when people are in public places.
 
-I like this project because the idea is concise.  It's easy to describe it and people can immediately see it's value.  There's also a lot of different applications that could come out of the same project.  It could be used in a bar for trivia or it could be played at a house party on a Chromecast, just to name a few.
+I like this project because the idea is concise.  It's easy to describe it and people can immediately see its value.  There's also a lot of different applications that could come out of the same project.  It could be used in a bar for trivia or it could be played at a house party on a Chromecast, just to name a few.
 
 ## Motivation
 
@@ -22,17 +22,17 @@ I also want to build a web application from the ground up.  Every side project I
 
 There are two frameworks that look particularly interesting: React Native and NativeScript.  Apparently these frameworks let you write an app in Javascript, and then compile it to iOS and Android.  If that's true and if it's actually viable, that means I would be able to build a mobile app without knowing Swift or the Android SDK.  This would be an incredibly powerful skill to know.
 
-I'm going to write about my decisions as I go through them.  This industry leans heavily on blog article and online documentation.  My stock as a software developer goes up if I could get a blog post that becomes the go-to resource for something like selecting a database. I wrote an article on Medium awhile back that described [Partial Collapses in Bootstrap 3](https://medium.com/@beedaan/partial-collapse-with-bootstrap-3-ef4e6bf85537).  The article got some good traction, but today I think Medium is a terrible platform to publish to and I'd rather own my own content.
+I'm going to write about my decisions as I go through them. I'd like to create resources that other developers can use on their own projects. I wrote an article on Medium awhile back that showed how to build a [Partial Collapse in Bootstrap 3](https://medium.com/@beedaan/partial-collapse-with-bootstrap-3-ef4e6bf85537).  It's rewarding to see other people learn from my own content and I'd like to continue that.
 
 ## MVP
 
 Version 1 of the app is going to be a web application.  I don't want users to have to download anything.  There's also not going to be a main display screen.  Integrating with a movie theater is going to be complicated.  I'm not sure if the preview reel is a roll of film, or if it's a digital display.  If it is a digital display, can we dynamically change what is projected?  These are problems I don't want to worry about right now.
 
-The quiz will be controlled from a mobile phone.  There will be a QuizMaster who sets up the quiz.  He'll share the quiz URL with the participants.  Once the participants are in the lobby, the QuizMaster will start the quiz.  The application will take care of the rest of the experience from there.
+The quiz will be controlled from a mobile phone.  There will be a Quiz Master who sets up the quiz.  They'll share the quiz URL with the participants.  Once the participants are in the lobby, the Quiz Master will start the quiz.  The application will take care of the rest of the experience from there.
 
 There will be no user accounts.  I don't want there to be any roadblocks between the players and the quiz.  The names will initialize as `Anonymous01` and so on.  The players will have the ability to change their display name, but that feature will be totally optional.  I want the players to feel like their identity is protected, but I also want to give them the option to put their name in if they feel comfortable.  I'll have to implement an input black list to prevent players from entering profanity.
 
-Each quiz will have a theme.  The QuizMaster will select the theme when he's setting up the quiz.  The themes will be along the lines of `Action`, `Horror`, and other movie genres. The quiz will have a series of multiple choice questions.  The players will have a short amount of time to enter each question so they can't look up the answers online.
+Each quiz will have a theme.  The Quiz Master will select the theme when setting up the quiz.  The themes will be along the lines of `Action`, `Horror`, and other movie genres. The quiz will have a series of multiple choice questions.  The players will have a short amount of time to enter each question so they can't look up the answers online.
 
 After each question, the app will display the current leaderboard with all of the participants.  The quiz URL will also be displayed so that new players can join in the middle.  Players that join in the middle will be taken to the current question in the quiz.  The'll start with 0 correct answers and be at a disadvantage, but they will be in the quiz.
 
