@@ -1,4 +1,4 @@
-import { tailwind } from "@theme-ui/presets"
+import {tailwind} from "@theme-ui/presets"
 import baseTheme from "@lekoarts/gatsby-theme-minimal-blog/src/gatsby-plugin-theme-ui/index";
 
 const headingStyles = {
@@ -48,6 +48,7 @@ export default {
             dark: {
                 ...baseTheme.colors.modes.dark,
                 primary: `#42A5F5`,
+                heading: tailwind.colors.gray[3],
                 codeBackground: tailwind.colors.gray[8],
             },
         },
