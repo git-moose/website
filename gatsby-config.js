@@ -9,7 +9,7 @@ module.exports = {
         siteTitle: `Brendan Heussler`,
         siteTitleAlt: `Brendan Heussler`,
         siteUrl: `https://builtbybrendan.com`,
-        siteDescription: `The personal website for Brendan Heussler, a Software Engineer living in San Diego, California.  Writes on topics such as Java, Javascript, and anything in between`,
+        siteDescription: `I'm Brendan, currently living in San Diego, California. I'm a software engineer at Swing AI. Currently, I'm working on a side project and writing about it.`,
         siteLanguage: `en`,
         author: `@beedaan`,
     },
@@ -52,7 +52,7 @@ module.exports = {
                 description: `I'm Brendan, currently living in San Diego, California. I'm a software engineer at Swing AI. Currently, I'm working on a side project and writing about it.`,
                 start_url: `/`,
                 background_color: `#fff`,
-                theme_color: `#6B46C1`,
+                theme_color: `#42A5F5`,
                 display: `standalone`,
                 icons: [
                     {
@@ -86,6 +86,7 @@ module.exports = {
                     {
                         resolve: `gatsby-remark-images`,
                         options: {
+                            linkImagesToOriginal: false,
                             withWebp: true,
                             quality: 85,
                             tracedSVG: true
