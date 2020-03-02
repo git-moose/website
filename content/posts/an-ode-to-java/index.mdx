@@ -1,46 +1,81 @@
 ---
 title: An Ode to Java
 date: 2020-02-26
-banner: TODO
+banner: ./duke_jetsurf_orig.png
 tags:
   - Java
   - Kotlin
+  - Scala
+  - Groovy
 ---
+
+I've used Java for as long as I've been a coder.
+My first computer science class in high school was Java, I used it all throughout college, I got my first internship in Java, which turned into my first job.
+I got my Oracle Associate Certificate for Java 7, and I still use Java pretty much on a daily basis.  Even though I've picked up a lot of other languages and specialties like front end web development, I always consider myself a Java developer.
 
 * I've used Java my entire career
 * When I was in college, I used Scheme, but when it came down to actually implementing something, I used Java
 
-## *Very* Brief History
+## Brief History
 
-* Java became popular for the JVM.  Compile once, run anywhere
+* Java became popular for the JVM.  Write once, run anywhere
 * Any computer, mainframe, or microwave running a JRE could run a Java program
-* Sun Microsystems marketing the hell out of it and it quickly became the darling of enterprise
-* The result of this today is that java opens doors
+* From a developer's perspective, it was also easier to write because of Garbage Collection, which alleviated the stress of manual memory management.
+* Sun Microsystems marketing the hell out of it and it quickly became the defacto language for enterprise applications
+* Java is [the most popular language on the TIOBE Index](https://www.tiobe.com/tiobe-index/).
+    * also https://stackify.com/popular-programming-languages-2018/
+* Java has a large community of developers.
+    * If you are starting a company or if you are looking for a job, Java is an excellent choice.
 
-## Java Today
+
+## Today
 
 * Compile once, run anywhere is not important anywhere because of virtualization
+*
+
+## Strengths
+
 * The strength of Java is the JVM
 * The libraries that are available
-    * Hibernate Validation
-    * Spring Data
-    * Spring Webflux (Non blocking IO)
+    * Personal opinion mixed with data.  The java libraries have had years of development and money invested into them
+        by enterprise organizations.  They feel mature and production ready, sometimes more useful than Java itself, in the
+        case of Google Guava.  In comparison, Node libraries feel like an open beta.
+    * JUnit and Mockito
+    * Jackson
+    * Hibernate
+    * Spring
     * A large part of the Java ecosystem is Spring.  I'll write another post on that shortly
 * The tooling built around Java
-
-* Performance - Amazon Story
+* Performance
+    * The JVM fast.  Benchmarking is a dangerous thing to do and I'm not going to tell you it's faster than Javascript (V8)
+        https://rclayton.silvrback.com/speaking-intelligently-about-java-vs-node-performance
+    * Amazon Story
 
 ## Kotlin
 
+* Google announced that [Kotlin will become a first class language on Android](https://blog.jetbrains.com/kotlin/2017/05/kotlin-on-android-now-official/)
 * Kotlin compiles to Java byte code, which means it runs on the JVM
 * It is 100% Interoperable with Java
 * It's concise
 * It has learned from a lot of the pain points of Java
 * It's different than Scala, Groovy, and other JVM languages.  It's more general purpose
 
+## Other JVM languages
+
+* Groovy
+    * Dynamically Typed Java.
+    * Working with [collections](https://docs.groovy-lang.org/next/html/documentation/working-with-collections.html) is pretty great
+    * https://www.reddit.com/r/java/comments/6wuj1i/what_does_rjava_think_of_groovy/
+* Scala
+    * Good for big data processing
+    * https://www.codementor.io/@jessicathornsby/kotlin-vs-scala-what-should-i-choose-instead-of-java-bwn9axvr8
+    * Kotlin has [overtaken Scala](https://snyk.io/blog/kotlin-overtakes-scala-and-clojure-to-become-the-2nd-most-popular-language-on-the-jvm/)
+
 ## Conclusion
 
 * Employability is always important to me
-* I don't see Java (JRE) going anywhere
+* I don't see Java (JVM) going anywhere
 * Kotlin could be the next step for the language.  It's officially supported for Android development
 * It's built by one of my favorite companies, Jetbrains.  Who make *the best* IDE in the world
+
+![Java mascot Duke](./duke_jetsurf_orig.png)
