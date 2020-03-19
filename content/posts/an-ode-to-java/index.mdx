@@ -22,14 +22,26 @@ Developers also liked using it because it made their lives easier.  It used [Gar
 
 Sun started [marketing the hell out of Java](https://www.youtube.com/watch?v=TuXw0ZXXDuI) and soon it became the de facto standard for enterprise applications.  Today, Java is [the most popular language on the TIOBE Index](https://www.tiobe.com/tiobe-index/).  Java has a large community of developers who are very experienced with the language.  If you are looking to start a business, Java is an excellent choice because you'll be able to hire from a large pool of qualified applicants.  If you are a developer looking for a java, Java is an excellent choice because there are job opportunities out the wazoo.
 
-## Today
-
-* Compile once, run anywhere is not important anywhere because of virtualization
-*
+![TIOBE Index February 2020](./tiobe-index.png)
 
 ## Strengths
 
-* The strength of Java is the JVM
+Today, the strengths of the language are not the same as they once were in 1996.  **Write once, run anywhere** isn't important anymore because of the growth of cloud computing and virtualization in general.  Java source code is showing it's age as well.  There's a lot of boilerplate that just feels unnecessary.  Just look at the Hello World example.  Why do we need all of this just to print to the command line?  Try explaining this to a beginner programmer.  Shout out to Mr. Grey from Intro to Computer Science because he did it.
+```java
+public static void main(String args[]) {
+    System.out.println("Hello, World");
+}
+```
+
+The strengths of Java don't lie in the Java language itself, but the JVM instead.  The JVM has over 20 years of development and optimization by some of the largest companies in the world.  It's fast.  Like, really fast.  It's [one of the fastest modern languages in the world](https://stackoverflow.com/a/2163570/515411).  It uses [Just-it-time compiling](https://en.wikipedia.org/wiki/Just-in-time_compilation), which Wikipedia has the best explanation of.
+
+> The Java virtual machine continually analyses program performance for hot spots which are executed frequently or repeatedly. These are then targeted for optimizing, [...] Some benchmarks show a 10-fold speed gain by this means.
+
+The freaking thing learns!!  And then it get's better!!
+
+
+You see, Java is a complied language.  A programmer starts with Java source code and then compiles it to Java Bytecode.  Then that Java Bytecode runs on a JVM.
+
 * The libraries that are available
     * Personal opinion mixed with data.  The java libraries have had years of development and money invested into them
         by enterprise organizations.  They feel mature and production ready, sometimes more useful than Java itself, in the
