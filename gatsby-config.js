@@ -29,6 +29,10 @@ module.exports = {
                 ],
                 externalLinks: [
                     {
+                        name: `GitHub`,
+                        url: `https://github.com/beedaan`,
+                    },
+                    {
                         name: `Twitter`,
                         url: `https://twitter.com/beedaan`,
                     },
