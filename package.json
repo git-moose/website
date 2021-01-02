@@ -16,22 +16,22 @@
     "clean": "gatsby clean"
   },
   "dependencies": {
-    "@lekoarts/gatsby-theme-minimal-blog": "^2.3.3",
-    "@theme-ui/presets": "^0.3.0",
-    "gatsby": "^2.21.9",
-    "gatsby-image": "^2.4.0",
-    "gatsby-plugin-google-analytics": "^2.3.0",
-    "gatsby-plugin-manifest": "^2.4.1",
-    "gatsby-plugin-netlify": "^2.3.0",
-    "gatsby-plugin-offline": "^3.2.0",
-    "gatsby-plugin-sharp": "^2.6.0",
-    "gatsby-plugin-sitemap": "^2.4.1",
-    "gatsby-transformer-sharp": "^2.5.0",
-    "react": "^16.13.1",
-    "react-dom": "^16.13.1"
+    "@lekoarts/gatsby-theme-minimal-blog": "^2.7.5",
+    "@theme-ui/presets": "^0.3.5",
+    "gatsby": "^2.29.3",
+    "gatsby-image": "^2.8.0",
+    "gatsby-plugin-google-analytics": "^2.8.0",
+    "gatsby-plugin-manifest": "^2.9.1",
+    "gatsby-plugin-netlify": "^2.8.0",
+    "gatsby-plugin-offline": "^3.7.1",
+    "gatsby-plugin-sharp": "^2.11.2",
+    "gatsby-plugin-sitemap": "^2.9.0",
+    "gatsby-transformer-sharp": "^2.9.0",
+    "react": "^16.14.0",
+    "react-dom": "^16.14.0"
   },
   "devDependencies": {
-    "cross-env": "^7.0.2",
-    "gatsby-plugin-webpack-bundle-analyser-v2": "^1.1.9"
+    "cross-env": "^7.0.3",
+    "gatsby-plugin-webpack-bundle-analyser-v2": "^1.1.18"
   }
 }
