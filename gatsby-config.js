@@ -9,7 +9,7 @@ module.exports = {
         siteTitle: `Brendan Heussler`,
         siteTitleAlt: `Brendan Heussler`,
         siteUrl: `https://builtbybrendan.com`,
-        siteDescription: `I'm Brendan, currently living in San Diego, California. I'm a software engineer at Swing AI. Currently, I'm working on a side project and writing about it.`,
+        siteDescription: `I'm Brendan, currently living in San Diego, California.  I'm a Full Stack Software Developer at Intuit. I'm working on the chat platform used in TurboTax and Quickbooks.`,
         siteLanguage: `en`,
         author: `@beedaan`,
     },
@@ -53,7 +53,7 @@ module.exports = {
             options: {
                 name: `Brendan Heussler - Software Engineer is San Diego`,
                 short_name: `Brendan Heussler`,
-                description: `I'm Brendan, currently living in San Diego, California. I'm a software engineer at Swing AI. Currently, I'm working on a side project and writing about it.`,
+                description: `I'm Brendan, currently living in San Diego, California.  I'm a Full Stack Software Developer at Intuit. I'm working on the chat platform used in TurboTax and Quickbooks.`,
                 start_url: `/`,
                 background_color: `#fff`,
                 theme_color: `#42A5F5`,
