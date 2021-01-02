@@ -17,7 +17,7 @@ export default () => {
     `);
 
     const style = {
-      'border-radius': '50%'
+      'borderRadius': '50%'
     };
 
     return (
