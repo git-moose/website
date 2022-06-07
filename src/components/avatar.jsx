@@ -5,7 +5,7 @@ import {useStaticQuery, graphql} from "gatsby";
 export default () => {
     const data = useStaticQuery(graphql`
         query MyQuery {
-            file(relativePath: {eq: "bush_trim.png"}) {
+            file(relativePath: {eq: "beach.png"}) {
                 id
                 childImageSharp {
                     fluid(quality: 85) {
