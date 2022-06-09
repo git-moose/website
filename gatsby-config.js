@@ -19,10 +19,6 @@ module.exports = {
             options: {
                 navigation: [
                     {
-                        title: `Blog`,
-                        slug: `/blog`,
-                    },
-                    {
                         title: `About`,
                         slug: `/about`,
                     },
@@ -30,11 +26,7 @@ module.exports = {
                 externalLinks: [
                     {
                         name: `GitHub`,
-                        url: `https://github.com/moose-ahh`,
-                    },
-                    {
-                        name: `Twitter`,
-                        url: `https://twitter.com/beedaan`,
+                        url: `https://github.com/moose-byte`,
                     },
                 ],
                 /* Required because we are using gatsby-plugin-mdx */
