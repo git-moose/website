@@ -2,7 +2,7 @@ import React from "react";
 import Img from "gatsby-image";
 import {useStaticQuery, graphql} from "gatsby";
 
-export default () => {
+const Avatar = function () {
     const data = useStaticQuery(graphql`
         query MyQuery {
             file(relativePath: {eq: "beach.png"}) {
@@ -24,3 +24,4 @@ export default () => {
         <Img fluid={data.file.childImageSharp.fluid} imgStyle={style} alt="Brendan Heussler"/>
     )
 }
+export default Avatar

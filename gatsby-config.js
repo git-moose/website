@@ -64,7 +64,6 @@ module.exports = {
                 ],
             },
         },
-        `gatsby-plugin-offline`,
         `gatsby-plugin-netlify`,
         {
             resolve: `gatsby-source-filesystem`,
@@ -87,6 +86,19 @@ module.exports = {
                             quality: 85,
                             tracedSVG: true
                         },
+                    },
+                ],
+            },
+        },
+        {
+            resolve: `gatsby-omni-font-loader`,
+            options: {
+                enableListener: true,
+                preconnect: [`https://fonts.googleapis.com`, `https://fonts.gstatic.com`],
+                web: [
+                    {
+                        name: `IBM Plex Sans`,
+                        file: `https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;700&display=swap`,
                     },
                 ],
             },

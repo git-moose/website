@@ -38,7 +38,7 @@ const headingStyles = {
     },
 };
 
-export default {
+const Theme = {
     ...baseTheme,
     colors: {
         ...baseTheme.colors,
@@ -66,3 +66,5 @@ export default {
         ...headingStyles
     }
 }
+
+export default Theme
